@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - CryoDevs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">CRYOLITE</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/hascoding.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1>Encoding Vs. Hashing Vs. Encryption</h1>
+                        <h2 class="subheading">RW5jb2RpbmcgaXMgZnVuCg==</h2><span class="meta">Posted by&nbsp;<a href="about.html">Muhammad Azhar</a>&nbsp;on May 11, 2020</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <p>With widespread adoption of cloud computing, keeping sensitive information secure from theft and vulnerabilities can be a real challenging. Encoding, hashing and encrypting are common concepts when it comes to securing data. <br></p>
+                    <p></p>
+                    <p></p><strong>Encoding</strong>
+                    <p>To encode something is to write in a way that other person/application will understand. There are many encoding standards such as ASCII, UTF-8 and Base64 just to name a few of them. A easy way to understand is to compare it to human
+                        language. The words and rules of each language are unique to each language. For example: An English speaker might not understand Chinese but with a translator he/she can easily decode the Chinese to English to understand the encoded
+                        text.<br></p>
+                    <p>The following represents the same data.&nbsp;</p>
+                    <div class="row">
+                        <div class="col"><small>Plain Text:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><small>ASCII:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><small>UTF-8:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><small>base64:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                    </div>
+                    <p>These might look unrelated to human eyes but to certain application they are the same thing. Relying on encoding to secure data is not a good practice that is because if anyone intercepts this data will have the real data since decoding
+                        these standards is an easy job.<br></p><strong>Hashing</strong>
+                    <p>Hashing is an integrity validation method. Hash coding can indicate whether the data has been altered in transit because its original hash value and hash value computed by the receiver will not match after the data was altered hence
+                        it is not a way to secure data.&nbsp;<br></p>
+                    <p>For example, when downloading an .iso for a Linux distribution from online, you want to make sure that the .iso file you installed has not been altered in anyway so you would make sure that the .iso you are installing is original.<br></p>
+                    <blockquote
+                        class="blockquote">
+                        <p class="mb-0"></p>
+                        </blockquote>
+                        <p>Common use of hashing is to secure the storage of passwords. When a password is created and then put through a hashing algorithm. The resulting hash is then stored. When user attempts to authenticate the password is hashed again
+                            and checked against the original hash to make sure it is the same.<br><br>Hashing algorithms include MD5, SHA1 and SHA256 are some of Hashing methods.<br></p>
+                        <p>The following represents the same data.&nbsp;</p>
+                        <div class="row">
+                            <div class="col"><small>Plan Text:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><small>MD5:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><small>SHA256:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><small>Bcrypt:&nbsp;</small><code>This is what you want to encrypt.</code></div>
+                        </div><a href="#"></a>
+                        <p>Hashing is never meant to be reversed so it should not be used to secure communications, it is just to check the integrity of data. It is not a encryption. <br></p><strong>Encryption</strong>
+                        <p>Encryption is making data unreadable by anyone except those who have the decryption key. The decryption can be a single shared key, or it can be broken int two keys, one kept private and one given to the other party. The logic
+                            behind and encryption program that includes the mathematics used in to do the conversion from plain text to the encrypted text (cipher text) is known as a encryption algorithm. <br></p>
+                        <p>Data such as messages are encrypted just before it is sent over a network or the internet and when the data arrives it is decrypted using the decryption program on device. <br></p>
+                        <p>Some encryption algorithms are considered so important that the U.S. government has banned publication of details about them. Currently, it is illegal for U.S. companies to export some of these encryption algorithms. The Freedom
+                            Forum <strong>LINK </strong>contains a number of articles on lawsuits and legislation surrounding encryption export laws. Some consider these publication restrictions a freedom of speech issue. <br></p>
+                        <p>One main property of an encryption algorithm is that someone can know the detail of the algorithm and still not be able to decipher the data without knowing the key that was used to encrypt the data. Most security experts today
+                            believe that a 128-bit key is decent security for data transmission, but now 256-bit and 2048-bit are commonly used now a days.<br></p>
+                        <p>Understanding the difference between these concepts can help you with considering security design and architecture. Accidentally implementing encoding as an encryption method can be very dangerous to an organization as that would
+                            mean the transmissions are real data that can be easily decoded by anyone.&nbsp; <br></p>
+                        <p><span>Source:&nbsp;&nbsp;</span><a href="http://spaceipsum.com">Space Ipsum</a><span>&nbsp;Photographs by&nbsp;</span><a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                        <p>The following represents the same data.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><a href="https://www.linkedin.com/in/muhammad-azhar/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><a href="https://github.com/MAzhar43" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></a></span></li>
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Muammad Azhar 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
